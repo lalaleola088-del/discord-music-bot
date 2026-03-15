@@ -1,22 +1,13 @@
 {
-  "name": "discord-music-bot-nodb",
+  "name": "discord-music-bot",
   "version": "1.0.0",
-  "description": "Discord music bot without MongoDB",
-  "main": "src/index.js",
-  "type": "commonjs",
+  "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
-    "deploy:commands": "node src/deploy-commands.js"
+    "start": "node index.js"
   },
   "dependencies": {
-    "@discordjs/rest": "^2.4.3",
-    "discord-api-types": "^0.37.103",
-    "discord.js": "^14.16.3",
-    "dotenv": "^16.4.7",
-    "erela.js": "^2.4.0"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.7"
+    "discord.js": "^14.14.1",
+    "@discordjs/voice": "^0.16.0",
+    "ytdl-core": "^4.11.5"
   }
 }
