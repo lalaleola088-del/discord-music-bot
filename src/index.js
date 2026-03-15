@@ -40,3 +40,4 @@ client.on("interactionCreate", async interaction => {
 });
 
 client.login(process.env.DISCORD_TOKEN);
+require("http").createServer((req,res)=>res.end("봇 실행중")).listen(process.env.PORT || 3000);
